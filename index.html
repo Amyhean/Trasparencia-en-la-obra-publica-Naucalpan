@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Encuesta sobre obra pública y transparencia</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      padding: 30px 15px;
+    }
+
+    .contenedor {
+      width: 100%;
+      max-width: 850px;
+      margin: auto;
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      color: #253858;
+      margin-bottom: 15px;
+      line-height: 1.2;
+    }
+
+    .descripcion {
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .pregunta {
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid #e2e2e2;
+    }
+
+    .pregunta h3 {
+      font-size: 17px;
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+
+    label {
+      display: block;
+      padding: 5px 0;
+      margin-bottom: 5px;
+      cursor: pointer;
+      line-height: 1.4;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 8px;
+      transform: scale(1.1);
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 110px;
+      margin-top: 10px;
+      padding: 12px;
+      font-size: 15px;
+      font-family: inherit;
+      border: 1px solid #bbb;
+      border-radius: 9px;
+      resize: vertical;
+    }
+
+    textarea:focus {
+      outline: none;
+      border-color: #253858;
+    }
+
+    button {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 10px;
+      background: #253858;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #18263d;
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    #mensaje {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+
+    .aviso {
+      margin-bottom: 25px;
+      padding: 15px;
+      border-radius: 10px;
+      background: #f0f3f7;
+      color: #444;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+
+      body {
+        padding: 15px 10px;
+      }
+
+      .contenedor {
+        padding: 22px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      .pregunta h3 {
+        font-size: 16px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="contenedor">
+
+    <h1>
+      Encuesta sobre obra pública y transparencia
+    </h1>
+
+    <p class="descripcion">
+      Esta encuesta busca conocer cómo afectan a la ciudadanía
+      los problemas relacionados con la infraestructura pública
+      y qué importancia tiene la transparencia en el uso de los
+      recursos públicos.
+    </p>
+
+    <div class="aviso">
+      La encuesta no solicita nombre, correo electrónico ni otros
+      datos de identificación personal. Las respuestas serán
+      utilizadas únicamente con fines de análisis.
+    </div>
+
+
+    <form id="encuestaForm">
+
+
+      <!-- PREGUNTA 1 -->
+
+      <div class="pregunta">
+
+        <h3>
+          1. ¿Las condiciones de las calles y obras públicas
+          afectan alguna parte de tu vida cotidiana?
+        </h3>
+
+        <label>
+          <input
+            type="radio"
+            name="p1"
+            value="Mucho"
+            required
+          />
+          Mucho
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p1"
+            value="Algo"
+          />
+          Algo
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p1"
+            value="Poco"
+          />
+          Poco
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p1"
+            value="Nada"
+          />
+          Nada
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 2 -->
+
+      <div class="pregunta">
+
+        <h3>
+          2. ¿Qué problemas de infraestructura pública
+          te afectan con mayor frecuencia?
+        </h3>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p2"
+            value="Baches"
+          />
+          Baches
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p2"
+            value="Tráfico"
+          />
+          Tráfico
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p2"
+            value="Inundaciones"
+          />
+          Inundaciones
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p2"
+            value="Falta de alumbrado"
+          />
+          Falta de alumbrado
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p2"
+            value="Problemas de agua o drenaje"
+          />
+          Problemas de agua o drenaje
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p2"
+            value="Banquetas deterioradas"
+          />
+          Banquetas deterioradas
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p2"
+            value="Obras inconclusas"
+          />
+          Obras inconclusas
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p2"
+            value="Reparaciones frecuentes"
+          />
+          Obras que requieren reparación frecuente
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 3 -->
+
+      <div class="pregunta">
+
+        <h3>
+          3. ¿Alguno de estos problemas te ha generado
+          un gasto económico?
+        </h3>
+
+        <label>
+          <input
+            type="radio"
+            name="p3"
+            value="Sí"
+            required
+          />
+          Sí
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p3"
+            value="No"
+          />
+          No
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p3"
+            value="No estoy seguro"
+          />
+          No estoy seguro/a
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 4 -->
+
+      <div class="pregunta">
+
+        <h3>
+          4. ¿Qué tipo de afectación has experimentado?
+        </h3>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p4"
+            value="Reparación del automóvil"
+          />
+          Reparación del automóvil
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p4"
+            value="Mayor gasto de gasolina o transporte"
+          />
+          Mayor gasto de gasolina o transporte
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p4"
+            value="Llegar tarde al trabajo o escuela"
+          />
+          Llegar tarde al trabajo o escuela
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p4"
+            value="Pérdida de tiempo por tráfico"
+          />
+          Pérdida de tiempo por tráfico
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p4"
+            value="Afectaciones a vivienda o negocio"
+          />
+          Afectaciones a vivienda o negocio
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p4"
+            value="Accidentes o riesgo de accidentes"
+          />
+          Accidentes o riesgo de accidentes
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p4"
+            value="Problemas de movilidad peatonal"
+          />
+          Problemas de movilidad peatonal
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="p4"
+            value="Ninguna"
+          />
+          Ninguna
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 5 -->
+
+      <div class="pregunta">
+
+        <h3>
+          5. ¿Has visto una calle u obra pública que haya
+          sido reparada y poco tiempo después volviera a
+          presentar problemas?
+        </h3>
+
+        <label>
+          <input
+            type="radio"
+            name="p5"
+            value="Sí"
+            required
+          />
+          Sí
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p5"
+            value="No"
+          />
+          No
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p5"
+            value="No recuerdo"
+          />
+          No recuerdo
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 6 -->
+
+      <div class="pregunta">
+
+        <h3>
+          6. ¿Has observado alguna obra pública inconclusa
+          o aparentemente abandonada?
+        </h3>
+
+        <label>
+          <input
+            type="radio"
+            name="p6"
+            value="Sí"
+            required
+          />
+          Sí
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p6"
+            value="No"
+          />
+          No
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p6"
+            value="No estoy seguro"
+          />
+          No estoy seguro/a
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 7 -->
+
+      <div class="pregunta">
+
+        <h3>
+          7. Cuando ves una obra pública,
+          ¿sabes cuánto dinero se destinó para realizarla?
+        </h3>
+
+        <label>
+          <input
+            type="radio"
+            name="p7"
+            value="Sí"
+            required
+          />
+          Sí
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p7"
+            value="Algunas veces"
+          />
+          Algunas veces
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p7"
+            value="No"
+          />
+          No
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 8 -->
+
+      <div class="pregunta">
+
+        <h3>
+          8. ¿Sabes qué empresa realizó las obras públicas
+          que utilizas diariamente?
+        </h3>
+
+        <label>
+          <input
+            type="radio"
+            name="p8"
+            value="Sí"
+            required
+          />
+          Sí
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p8"
+            value="Algunas veces"
+          />
+          Algunas veces
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p8"
+            value="No"
+          />
+          No
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 9 -->
+
+      <div class="pregunta">
+
+        <h3>
+          9. ¿Consideras importante conocer cuánto costó
+          una obra y quién fue responsable de realizarla?
+        </h3>
+
+        <label>
+          <input
+            type="radio"
+            name="p9"
+            value="Muy importante"
+            required
+          />
+          Muy importante
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p9"
+            value="Importante"
+          />
+          Importante
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p9"
+            value="Poco importante"
+          />
+          Poco importante
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p9"
+            value="Nada importante"
+          />
+          Nada importante
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 10 -->
+
+      <div class="pregunta">
+
+        <h3>
+          10. ¿Consideras que la falta de información
+          sobre costos, contratos y empresas responsables
+          puede dificultar que la ciudadanía detecte
+          posibles irregularidades?
+        </h3>
+
+        <label>
+          <input
+            type="radio"
+            name="p10"
+            value="Sí"
+            required
+          />
+          Sí
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p10"
+            value="No"
+          />
+          No
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p10"
+            value="No estoy seguro"
+          />
+          No estoy seguro/a
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 11 -->
+
+      <div class="pregunta">
+
+        <h3>
+          11. ¿Crees que una mayor transparencia
+          ayudaría a mejorar la forma en que se utilizan
+          los recursos públicos?
+        </h3>
+
+        <label>
+          <input
+            type="radio"
+            name="p11"
+            value="Sí"
+            required
+          />
+          Sí
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p11"
+            value="No"
+          />
+          No
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p11"
+            value="Tal vez"
+          />
+          Tal vez
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 12 -->
+
+      <div class="pregunta">
+
+        <h3>
+          12. ¿Cómo te afecta personalmente que una obra
+          pública no se realice correctamente?
+        </h3>
+
+        <textarea
+          name="p12"
+          placeholder="Escribe tu respuesta..."
+          required
+        ></textarea>
+
+      </div>
+
+
+      <!-- PREGUNTA 13 -->
+
+      <div class="pregunta">
+
+        <h3>
+          13. Si una obra costó más de lo planeado,
+          ¿consideras que la ciudadanía debería poder
+          conocer el motivo del aumento?
+        </h3>
+
+        <label>
+          <input
+            type="radio"
+            name="p13"
+            value="Sí"
+            required
+          />
+          Sí
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p13"
+            value="No"
+          />
+          No
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p13"
+            value="Depende del caso"
+          />
+          Depende del caso
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 14 -->
+
+      <div class="pregunta">
+
+        <h3>
+          14. ¿Te gustaría poder consultar fácilmente
+          cuánto costó una obra, quién la realizó y cuál
+          es su avance?
+        </h3>
+
+        <label>
+          <input
+            type="radio"
+            name="p14"
+            value="Sí"
+            required
+          />
+          Sí
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p14"
+            value="No"
+          />
+          No
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p14"
+            value="Tal vez"
+          />
+          Tal vez
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 15 -->
+
+      <div class="pregunta">
+
+        <h3>
+          15. Si existiera una plataforma sencilla
+          para consultar y reportar problemas de obras
+          públicas, ¿la utilizarías?
+        </h3>
+
+        <label>
+          <input
+            type="radio"
+            name="p15"
+            value="Sí"
+            required
+          />
+          Sí
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p15"
+            value="No"
+          />
+          No
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p15"
+            value="Tal vez"
+          />
+          Tal vez
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 16 -->
+
+      <div class="pregunta">
+
+        <h3>
+          16. ¿Qué te preocuparía más respecto al dinero
+          destinado a obras públicas?
+        </h3>
+
+        <label>
+          <input
+            type="radio"
+            name="p16"
+            value="Que las obras cuesten más de lo necesario"
+            required
+          />
+          Que las obras cuesten más de lo necesario
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p16"
+            value="Que sean de mala calidad"
+          />
+          Que sean de mala calidad
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p16"
+            value="Que queden inconclusas"
+          />
+          Que queden inconclusas
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p16"
+            value="Que no se atiendan necesidades prioritarias"
+          />
+          Que no se atiendan las necesidades prioritarias
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p16"
+            value="Que no exista información sobre cómo se gastó el dinero"
+          />
+          Que no exista información sobre cómo se gastó el dinero
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p16"
+            value="Que no existan consecuencias cuando una obra sale mal"
+          />
+          Que no existan consecuencias cuando una obra sale mal
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 17 -->
+
+      <div class="pregunta">
+
+        <h3>
+          17. ¿Quién consideras que debería vigilar
+          principalmente que una obra pública se realice
+          correctamente?
+        </h3>
+
+        <label>
+          <input
+            type="radio"
+            name="p17"
+            value="El gobierno"
+            required
+          />
+          El gobierno
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p17"
+            value="Organismos fiscalizadores"
+          />
+          Organismos fiscalizadores
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p17"
+            value="Ciudadanía"
+          />
+          Ciudadanía
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p17"
+            value="Organizaciones civiles"
+          />
+          Organizaciones civiles
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p17"
+            value="Medios de comunicación"
+          />
+          Medios de comunicación
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p17"
+            value="Todos los anteriores"
+          />
+          Todos los anteriores
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 18 -->
+
+      <div class="pregunta">
+
+        <h3>
+          18. ¿Consideras que los ciudadanos deberían
+          participar en la vigilancia de las obras públicas?
+        </h3>
+
+        <label>
+          <input
+            type="radio"
+            name="p18"
+            value="Sí"
+            required
+          />
+          Sí
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p18"
+            value="No"
+          />
+          No
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="p18"
+            value="Tal vez"
+          />
+          Tal vez
+        </label>
+
+      </div>
+
+
+      <!-- PREGUNTA 19 -->
+
+      <div class="pregunta">
+
+        <h3>
+          19. ¿Qué información necesitarías para saber
+          si una obra pública se realizó correctamente?
+        </h3>
+
+        <textarea
+          name="p19"
+          placeholder="Escribe tu respuesta..."
+          required
+        ></textarea>
+
+      </div>
+
+
+      <!-- PREGUNTA 20 -->
+
+      <div class="pregunta">
+
+        <h3>
+          20. ¿De qué manera crees que una obra pública
+          mal planeada, mal ejecutada o poco transparente
+          puede afectar a una persona?
+        </h3>
+
+        <textarea
+          name="p20"
+          placeholder="Escribe tu respuesta..."
+          required
+        ></textarea>
+
+      </div>
+
+
+      <button
+        type="submit"
+        id="btnEnviar"
+      >
+        Enviar encuesta
+      </button>
+
+      <div id="mensaje"></div>
+
+    </form>
+
+  </main>
+
+
+  <script>
+
+    const URL_APP_SCRIPT =
+      "https://script.google.com/macros/s/AKfycbxikAtTENqnQaGcJEzzmd-sBOzPFqampRjUIirlny270ybSiKMJa3r0gtXjv1zKCuVC2g/exec";
+
+
+    const formulario =
+      document.getElementById("encuestaForm");
+
+    const boton =
+      document.getElementById("btnEnviar");
+
+    const mensaje =
+      document.getElementById("mensaje");
+
+
+    formulario.addEventListener(
+      "submit",
+      async function(event) {
+
+        event.preventDefault();
+
+
+        boton.disabled = true;
+
+        boton.textContent =
+          "Enviando...";
+
+
+        mensaje.textContent =
+          "Guardando respuesta...";
+
+        mensaje.style.color =
+          "#253858";
+
+
+        /*
+          FormData captura automáticamente:
+
+          radio
+          checkbox
+          textarea
+
+          y conserva varias respuestas
+          cuando tienen el mismo name.
+        */
+
+        const datos =
+          new FormData(formulario);
+
+
+        try {
+
+          /*
+            Apps Script puede dar problemas de CORS
+            cuando se intenta leer la respuesta.
+
+            Con no-cors enviamos la información
+            sin intentar leer la respuesta del servidor.
+          */
+
+          await fetch(
+            URL_APP_SCRIPT,
+            {
+              method: "POST",
+
+              body: datos,
+
+              mode: "no-cors"
+            }
+          );
+
+
+          mensaje.textContent =
+            "✅ Gracias. Tu respuesta fue enviada correctamente.";
+
+          mensaje.style.color =
+            "green";
+
+
+          formulario.reset();
+
+
+        }
+
+        catch(error) {
+
+          console.error(
+            "Error al enviar:",
+            error
+          );
+
+
+          mensaje.textContent =
+            "❌ No fue posible enviar la respuesta. Intenta nuevamente.";
+
+          mensaje.style.color =
+            "red";
+
+        }
+
+
+        boton.disabled = false;
+
+        boton.textContent =
+          "Enviar encuesta";
+
+      }
+    );
+
+  </script>
+
+</body>
+</html>
